@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #7f8c8d;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Halo, Saya Full Stack Developer!</h1>
+    <p id="pesan">Ini adalah proyek web pertama yang saya buat pakai VS Code.</p>
+        <button id="tombol">Klik Saya</button>
+
+<!-- KODE JAVASCRIPT -->
+    <script>
+        // Mengambil elemen berdasarkan ID
+        const tombol = document.getElementById('tombol');
+        const pesan = document.getElementById('pesan');
+
+        // Memberikan aksi saat tombol diklik
+        tombol.addEventListener('click', function() {
+            alert('Selamat! Kamu berhasil menjalankan kode JavaScript pertama!');
+            pesan.textContent = 'Teks ini berhasil diubah menggunakan JavaScript 🎉';
+            pesan.style.color = '#27ae60'; // Mengubah warna teks jadi hijau
+        });
+    </script>
+</body>
+</html>
